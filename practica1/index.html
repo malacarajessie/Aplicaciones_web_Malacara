@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- cabecera del doc-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <title> practica 1</title>
+        <link rel="stylesheet" href="styles.css"> <!-- enlace al stylsheet  -->
+    </head>
+<body>
+
+    <!-- barra de navegacion-->
+    <div class="encabezado">    
+     <nav>
+        <ul>
+            <li><a href=" inicio">inicio <!--enlace 1--> </a></li>
+            <li><a href="sobre mi">sobre mi <!--enlace 2--> </a></li>
+            <li><a href="galeriaproductos">galeria de productos <!--enlace 3--> </a></li>
+            <li><a href="contacto">contacto <!--enlace 4--> </a></li>
+        </ul>
+     </nav>
+         <div class="slider">
+        <img src="portada3.jpg" alt="portada1" class="slide">
+        <img src="portada7.jpg" alt="portada1" class="slide">
+        <img src="portada8.jpg" alt="portada1" class="slide">
+         </div>
+    </div> 
+    <script src="slider.js"> </script>
+
+     <!-- seccion principal-->
+      <section>
+        <h1> B i e n v e n i d o </h1>
+        <p> Pagina para brindar informacion sobre mi </p>
+      </section>
+
+      <!-- seccion "sobre mi"-->
+       <section>
+        <h2>SOBRE MI<!--seccion sobre mi--> </h2>
+        <ul> 
+            <li> <!--elemento 1--> Tengo rayos dorados en mi cabello</li>
+            <li> <!--elemento 2--> Tengo los ojos cafes oscuro</li>
+            <li> <!--elemento 3--> Soy de estatura promedio</li>
+        </ul>
+       </section>
+
+       <!-- catalogo de productos-->
+        <section id="galeria-productos">
+            <h2>GALERIA DE PRODUCTOS<!--seccion sobre mi--> </h2>
+            <div class="galeria-productos"></div>
+            <div class="productos">
+                <img src="imagen1.jpg" alt="producto1">
+                <h3>DIOR ADDICT LIP MAXIMIZER</h3>
+                <p> Brillo de labios repulpante - efecto volumen instantáneo y larga duración - 24 h de hidratación</p>
+                <button onclick="location.href='gloss.html';">
+                     comprar
+                    </button>
+            </div>
+            <div class="productos">
+                <img src="imagen2.jpg" alt="producto2">
+                <h3>DIOR BACKSTAGE - EYELASH CURLER</h3>
+                <p> Rizador de pestañas squeezable* ultraconfort - Rizo perfecto al instante * Rizador de pestañas que se presiona.</p>
+                <button onclick="location.href='enchinador.html';">
+                    comprar
+                   </button>
+            </div>
+            <div class="productos">
+                <img src="imagen3.jpg" alt="producto3">
+                <h3>DIOR BACKSTAGE FACE & BODY FOUNDATION</h3>
+                <p> Fondo de maquillaje para rostro y cuerpo - acabado natural efecto segunda piel - resistente al agua y al calor</p>
+                <button onclick="location.href='base.html';">
+                    comprar
+                   </button>
+            </div>
+            <div class="productos">
+                <img src="imagen4.jpg" alt="producto1">
+                <h3>DIORSHOW WATERPROOF</h3>
+                <p> Máscara profesional</p>
+                <button onclick="location.href='rimel.html';">
+                    comprar
+                   </button>
+            </div>
+            <div class="productos">
+                <img src="imagen5.jpg" alt="producto1">
+                <h3>DIOR FOREVER COUTURE LUMINIZER</h3>
+                <p> Highlighter de larga duración - 95 %* de pigmentos de origen natural</p>
+                <button onclick="location.href='iluminador.html';">
+                    comprar
+                   </button>
+            </div>
+
+        </section>
+
+        <!-- Formulario de contacto -->
+    <section>
+        <h2><!-- seccion contacto --> contacto </h2>
+        <form action="#" method="post">
+            <label for="name"><!-- nombre --></label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email"><!-- correo --></label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message"><!-- mensaje --></label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <br>
+            <input type="submit" value="Enviar"><!-- area de texto-->
+        </form>
+    </section>
+</body>
+</html>
