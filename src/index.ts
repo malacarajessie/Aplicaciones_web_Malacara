@@ -1,5 +1,7 @@
 import express from 'express';
 import morgan from 'morgan';
+import authRoutes from './routes/auth_routes';
+import connectBDMongo from './config/db';
 
 const app = express(); // Creando un objeto del servidor express
 const PORT = 3000;     // Número de puerto
@@ -10,3 +12,11 @@ app.use(morgan('dev'));
 app.listen(PORT, () => {
     console.log(`El servidor está en el puerto: ${PORT}`);
 });
+
+app.use('/api/auth',authRoutes);
+
+connectBDMongo().then(()=>
+app.listen(PORT, () => {
+    console.log(`el servidor esta en el puerto: ${PORT}`);
+    console.log("el servidor esta en el puerto", PORT);
+}))
